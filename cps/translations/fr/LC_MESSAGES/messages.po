@@ -43,7 +43,7 @@ msgstr "Statistiques"
 
 #: cps/admin.py:128
 msgid "Calibre database unavailable. Please reconfigure the library path."
-msgstr ""
+msgstr "La base de données Calibre n'est pas disponible. Merci de reconfigurer le chemin de la bibliothèque."
 
 #: cps/admin.py:180
 msgid "Server restarted, please reload page."
@@ -112,12 +112,12 @@ msgstr "Correspond à %(action)s"
 
 #: cps/admin.py:439
 msgid "No pending matches to reject"
-msgstr ""
+msgstr "Aucun match en attente à rejeter"
 
 #: cps/admin.py:445
 #, python-format
 msgid "Rejected %(count)s match(es)"
-msgstr ""
+msgstr "%(count) match(s) rejeté(s)"
 
 #: cps/admin.py:482
 #, python-brace-format
@@ -731,7 +731,6 @@ msgstr ""
 "Echec de la connexion: Le serveur a retourné le code de status %(code)s"
 
 #: cps/admin.py:2895
-#, fuzzy
 msgid ""
 "Connection failed: Could not connect to server. Check the URL and network "
 "connectivity."
@@ -740,7 +739,6 @@ msgstr ""
 "l'URL et la connexion réseau."
 
 #: cps/admin.py:2897
-#, fuzzy
 msgid ""
 "Connection failed: Request timed out. The server may be slow or unreachable."
 msgstr ""
@@ -748,7 +746,6 @@ msgstr ""
 "lent ou inaccessible."
 
 #: cps/admin.py:2899
-#, fuzzy
 msgid ""
 "Connection failed: Server returned invalid JSON. This may not be an OIDC "
 "endpoint."
@@ -757,12 +754,12 @@ msgstr ""
 "s'agit peut-être pas d'un point de terminaison OIDC."
 
 #: cps/admin.py:2902
-#, fuzzy, python-format
+#, python-format
 msgid "Connection failed: %(error)s"
 msgstr "Échec de la connexion : %(error)s"
 
 #: cps/admin.py:2928
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Metadata is missing required OIDC fields: %(fields)s. This may not be a "
 "valid OIDC metadata endpoint."
@@ -772,14 +769,13 @@ msgstr ""
 "valide."
 
 #: cps/admin.py:2939
-#, fuzzy, python-format
+#, python-format
 msgid "Metadata URL is valid! Found %(count)s OAuth endpoints."
 msgstr ""
 "L'URL des métadonnées est valide ! %(count)s points de terminaison OAuth "
 "trouvés."
 
 #: cps/admin.py:2941
-#, fuzzy
 msgid " User info endpoint is available."
 msgstr " Le point de terminaison des informations utilisateur est disponible."
 
@@ -797,7 +793,6 @@ msgstr ""
 "correcte."
 
 #: cps/admin.py:2952
-#, fuzzy
 msgid ""
 "Connection failed: Could not connect to metadata URL. Check the URL and "
 "network connectivity."
@@ -818,13 +813,13 @@ msgid "An unknown error occurred."
 msgstr "Une erreur inconnue est survenue."
 
 #: cps/admin.py:2971
-#, fuzzy
 msgid "Restore already in progress."
-msgstr "Échec de la connexion : %(error)s"
+msgstr "La restauration est déjà en cours." 
 
 #: cps/admin.py:2975
 msgid "Restore failed: Calibre library path is not configured."
-msgstr ""
+msgstr "Échec de la restauration : le chemin d'accès à la bibliothèque"
+"Calibre n'est pas configuré."
 
 #: cps/admin.py:2980
 #, python-format
@@ -834,12 +829,13 @@ msgstr ""
 #: cps/admin.py:2985
 #, python-format
 msgid "Restore failed: app.db not found at %(path)s"
-msgstr ""
+msgstr "Échec de la restauration : fichier metadata.db "
+"introuvable à l'emplacement %(path)s" 
 
 #: cps/admin.py:3057 cps/admin.py:3097
-#, fuzzy, python-format
+#, python-format
 msgid "Restore failed: %(err)s"
-msgstr "Échec de la connexion : %(error)s"
+msgstr "Échec de la restauration : %(error)s"
 
 #: cps/admin.py:3074
 msgid "Restore completed but app.db cleanup failed. See logs for details."
